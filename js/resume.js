@@ -26,6 +26,5 @@
   });
 
   // FadeIn on Document Load
-  $('body').css('display', 'none').fadeIn(2500);
-
+  $('body').fadeIn(2500);
 })(jQuery);
