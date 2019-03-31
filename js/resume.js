@@ -1,8 +1,6 @@
 (function($) {
   "use strict";
 
-  $('body').css('display', 'none').fadeIn(2500);
-
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -26,7 +24,8 @@
   $('body').scrollspy({
     target: '#sideNav'
   });
-  
-  $("#fader").fadeIn("slow");
+
+  // FadeIn on Document Load
+  $('body').css('display', 'none').fadeIn(2500);
 
 })(jQuery);
